@@ -111,6 +111,10 @@ func parseIP(packet gopacket.Packet) *IPDetails {
 	}
 }
 
+func SniffTCPWarpper(device string, tlsPort int) {
+	sniffTCP(device, tlsPort)
+}
+
 func sniffTCP(device string, tlsPort int) {
 	// devices()
 	// Open device
